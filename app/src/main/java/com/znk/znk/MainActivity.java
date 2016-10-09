@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void mainScreen(View v) {
+    public void searchActivity(View v) {
         if (v.getId() == R.id.loginButton) {
-            Intent intentSimple = new Intent(getApplicationContext(), MainScreen.class);
+            Intent intentSimple = new Intent(getApplicationContext(), SearchAcitvity.class);
             startActivity(intentSimple);
         }
     }
