@@ -1,11 +1,15 @@
 package com.znk.znk;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,6 +25,10 @@ public class SearchAcitvity extends Activity {
     private ListView listView;
     private ArrayAdapter<String> adapter ;
     private ArrayList<String> employeesList;
+    private TextView employee;
+    private Intent intentSingleEmployee;
+
+
 
 
     @Override
@@ -41,6 +49,16 @@ public class SearchAcitvity extends Activity {
 
         listView.setAdapter(adapter);
 
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                intentSingleEmployee = new Intent(getApplicationContext(), SingleEmployeeActivity.class);
+                intentSingleEmployee.putExtra("name",employees[position]);
+                startActivity(intentSingleEmployee);
+            }
+        });
 
 
         //***setOnQueryTextListener***
@@ -79,6 +97,8 @@ public class SearchAcitvity extends Activity {
             }
 
         });
+
+
 
     }
     }
