@@ -31,7 +31,7 @@ public class SingleEmployeeActivity extends Activity {
 
         ImageView employeePhoto = (ImageView) findViewById(R.id.employeePhoto);
 
-        int imageResource = getResources().getIdentifier("@drawable/jdokimuk", null, getPackageName());
+        int imageResource = getResources().getIdentifier("@drawable/default_pic", null, getPackageName());
 
         Drawable res = getResources().getDrawable(imageResource);
         employeePhoto.setImageDrawable(res);

@@ -55,7 +55,7 @@ public class SearchAcitvity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 intentSingleEmployee = new Intent(getApplicationContext(), SingleEmployeeActivity.class);
-                intentSingleEmployee.putExtra("name",employees[position]);
+                intentSingleEmployee.putExtra("name",employeesList.get(position));
                 startActivity(intentSingleEmployee);
             }
         });
@@ -101,5 +101,11 @@ public class SearchAcitvity extends Activity {
 
 
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        searchView.setQuery("",false);
+        searchView.setIconified(true);
     }
+}
 
