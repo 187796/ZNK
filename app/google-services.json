@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218253230070",
+    "firebase_url": "https://znk-android.firebaseio.com",
+    "project_id": "znk-android",
+    "storage_bucket": "znk-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218253230070:android:05a9fab235ad5a6a",
+        "android_client_info": {
+          "package_name": "com.znk.znk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218253230070-3r9jl9i8cucpe3lf1ecmhdosit8jr002.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfm50Ay70DnbUoyMjMhKwfELSjDHOAtSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
